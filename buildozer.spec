@@ -12,5 +12,5 @@ android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE
 android.api = 33
 android.minapi = 24
 #android.sdk = 33
-#android.ndk = 25b
+android.ndk = 25b
 android.archs = arm64-v8a
