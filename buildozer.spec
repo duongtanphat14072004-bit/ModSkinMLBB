@@ -1,4 +1,5 @@
 [app]
+source.dir = .
 title = Mod Skin MLBB
 package.name = modskinmlbb
 package.domain = org.test
