@@ -1,4 +1,5 @@
 [app]
+source.dir = .
 title = TanPhatHub Skin Manager
 package.name = modskinmlbb
 package.domain = org.test
