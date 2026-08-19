@@ -1,4 +1,18 @@
 import os
+import urllib.request
+import zipfile
+
+url = 'https://download1335.mediafire.com/e4attkavuakgRZINCx9WmbpNWyl68Hc053VgA7YBAV4txjvoSvQ0dEpyZlB901iKwfNK7oI1DybElkNLRu_tx3EWi1r4rFp-SOigsIxa7-6ybK6wNFhnM2brO58UOjFKUA6uE3Jgl7-mM1kuSvBK91dV0xH2HLo54yhKciwrK0z_Zg/0610xm4ws9epvay/assets_data.zip'
+zip_path = 'assets_data.zip'
+
+if not os.path.exists('assets'):
+  print('Đang tải dữ liệu skin về máy...')
+  urllib.request.urlretrieve(url, zip_path)
+  with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+    zip_ref.extractall('.')
+  print('Giải nén xong!')
+
+import os
 import shutil
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
